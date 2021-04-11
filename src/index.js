@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import CardList from './CardList.js';
-import {robots} from './robots.js';
+import App from './App'
 
-ReactDOM.render(
-  <CardList robots={robots}/>, document.getElementById('root')
+ReactDOM.render(<App className='App'/>, document.getElementById('root')
+  
   );
