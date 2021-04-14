@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReachDOM from 'react-dom';
 import CardList from './CardList.js';
 import {robots} from './robots.js';
+import Scroll from './Scroll';
 import SearchBox from './SearchBox.js';
 import './index.css';
 
@@ -35,7 +36,9 @@ class App extends Component {
             <div className='App'>
                 <h1>RoboFriends</h1>
                 <SearchBox searchChange={this.onSearchChange}/>
-                <CardList robots={filteredRobots}/>
+                <Scroll>
+                    <CardList robots={filteredRobots}/>
+                </Scroll>
             </div>
             );
         }        
